@@ -1,5 +1,4 @@
-<h2 align="left">Hi 👋! My name is  rubuuu</h2>
-
+<h2 align="left">Hi 👋! My name is  rubuuu</h2> 
 ###
 
 <img align="right" height="150" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnBpZ3Y5dXJiMTFjd2d5ZG1wcnZjdHpuZjIzc2hmZXFubzIydjcxbSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/78XCFBGOlS6keY1Bil/giphy.gif"  />
