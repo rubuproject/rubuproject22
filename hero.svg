@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Awesome GitHub Profile — design-led README templates">
+  <title>Awesome GitHub Profile</title>
+  <desc>A neutral gallery wall: the shell stays quiet so very different work can hang inside it. The nine marks are techniques the kit uses, not a count of anything.</desc>
+  <defs>
+    <filter id="hr-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.07  0 0 0 0 0.06  0 0 0 0 0.05  0 0 0 0.45 0"/>
+    </filter>
+    <!-- One accent, used exactly three times. -->
+    <linearGradient id="hr-rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d4321e"/>
+      <stop offset="1" stop-color="#d4321e" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="360" fill="#f3f0e9"/>
+  <rect width="1200" height="360" filter="url(#hr-grain)" opacity="0.5"/>
+
+  <!-- running head -->
+  <text x="72" y="46" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#8c8578" letter-spacing="4">DESIGN-LED README KIT</text>
+  <text x="1128" y="46" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#8c8578" letter-spacing="4">EDITION MMXXVI</text>
+  <line x1="72" y1="62" x2="1128" y2="62" stroke="#111111" stroke-width="2"/>
+
+  <!-- masthead -->
+  <text x="70" y="168" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="82" fill="#111111" letter-spacing="-2">Awesome</text>
+  <text x="70" y="248" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, sans-serif" font-size="82" font-weight="800" fill="#111111" letter-spacing="-3.5">GitHub Profile.</text>
+  <rect x="72" y="276.5" width="288" height="3" fill="url(#hr-rule)"/>
+  <text x="72" y="308" font-family="Georgia, serif" font-size="19" fill="#4a443a">Copy, paste, ship — and look like you hired someone.</text>
+
+  <!-- Nine marks standing for techniques in the kit — rule, wave, isometry,
+       arcade, chart, aperture, horizon, theme-split, lattice. A specimen
+       index rather than decoration, and deliberately not a category count,
+       so adding a category never makes the hero wrong. -->
+  <g transform="translate(792,84)" stroke="#111111" fill="none" stroke-width="2.2" stroke-linecap="round">
+    <!-- a rule and a full stop -->
+    <g transform="translate(0,0)">
+      <rect x="0" y="0" width="96" height="64" fill="none" stroke="#d6d0c4" stroke-width="1"/>
+      <line x1="20" y1="30" x2="62" y2="30"/>
+      <circle cx="72" cy="30" r="3.2" fill="#111111" stroke="none"/>
+    </g>
+    <!-- one wave -->
+    <g transform="translate(116,0)">
+      <rect x="0" y="0" width="96" height="64" fill="none" stroke="#d6d0c4" stroke-width="1"/>
+      <path d="M18 38 Q34 18 48 32 T78 26"/>
+    </g>
+    <!-- 03 3d — an isometric cube -->
+    <g transform="translate(232,0)">
+      <rect x="0" y="0" width="96" height="64" fill="none" stroke="#d6d0c4" stroke-width="1"/>
+      <path d="M48 14 L70 26 L48 38 L26 26 Z"/>
+      <path d="M26 26 L26 42 L48 54 L48 38"/>
+      <path d="M70 26 L70 42 L48 54"/>
+    </g>
+    <!-- pellets and a mouth -->
+    <g transform="translate(0,80)">
+      <rect x="0" y="0" width="96" height="64" fill="none" stroke="#d6d0c4" stroke-width="1"/>
+      <path d="M30 32 L44 24 A16 16 0 1 0 44 40 Z" fill="#111111" stroke="none"/>
+      <circle cx="56" cy="32" r="2.6" fill="#111111" stroke="none"/>
+      <circle cx="66" cy="32" r="2.6" fill="#111111" stroke="none"/>
+      <circle cx="76" cy="32" r="2.6" fill="#111111" stroke="none"/>
+    </g>
+    <!-- three bars -->
+    <g transform="translate(116,80)">
+      <rect x="0" y="0" width="96" height="64" fill="none" stroke="#d6d0c4" stroke-width="1"/>
+      <line x1="30" y1="46" x2="30" y2="30"/>
+      <line x1="48" y1="46" x2="48" y2="18"/>
+      <line x1="66" y1="46" x2="66" y2="36"/>
+    </g>
+    <!-- an aperture -->
+    <g transform="translate(232,80)">
+      <rect x="0" y="0" width="96" height="64" fill="none" stroke="#d6d0c4" stroke-width="1"/>
+      <circle cx="48" cy="32" r="17"/>
+      <circle cx="48" cy="32" r="6" fill="#d4321e" stroke="none"/>
+    </g>
+    <!-- sun over a horizon -->
+    <g transform="translate(0,160)">
+      <rect x="0" y="0" width="96" height="64" fill="none" stroke="#d6d0c4" stroke-width="1"/>
+      <path d="M32 36 A16 16 0 0 1 64 36"/>
+      <line x1="22" y1="42" x2="74" y2="42"/>
+      <line x1="30" y1="50" x2="66" y2="50"/>
+    </g>
+    <!-- one square, two realities -->
+    <g transform="translate(116,160)">
+      <rect x="0" y="0" width="96" height="64" fill="none" stroke="#d6d0c4" stroke-width="1"/>
+      <rect x="30" y="16" width="36" height="32"/>
+      <path d="M48 16 L66 16 L66 48 L48 48 Z" fill="#111111" stroke="none"/>
+    </g>
+    <!-- a lattice, the showcase tier -->
+    <g transform="translate(232,160)">
+      <rect x="0" y="0" width="96" height="64" fill="none" stroke="#d4321e" stroke-width="1.4"/>
+      <path d="M26 44 L40 22 L58 40 L72 20" stroke-width="1.6"/>
+      <circle cx="26" cy="44" r="3" fill="#111111" stroke="none"/>
+      <circle cx="40" cy="22" r="3" fill="#111111" stroke="none"/>
+      <circle cx="58" cy="40" r="3" fill="#111111" stroke="none"/>
+      <circle cx="72" cy="20" r="3" fill="#d4321e" stroke="none"/>
+    </g>
+  </g>
+
+  <!-- baseline index -->
+  <line x1="72" y1="330" x2="1128" y2="330" stroke="#111111" stroke-width="1"/>
+  <text x="72" y="348" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9.5" fill="#8c8578" letter-spacing="2.5">EVERY TEMPLATE DECLARES WHAT IT COSTS YOU — SVG · MARKDOWN · ACTION · TECHNIQUE</text>
+  <text x="1128" y="348" text-anchor="end" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9.5" fill="#8c8578" letter-spacing="2.5">MIT</text>
+</svg>

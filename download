@@ -1,0 +1,25 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Node (in case contributors run link-checkers locally)
+node_modules/
+package-lock.json
+.npm/
+
+# Local previews / scratch
+scratch/
+*.local.md
+_sheet.html
+_hero.html
+_one.html
+_mobile.html
+_og.html
+_cards.html

@@ -1,0 +1,2790 @@
+{
+  "generated": "scripts/build.mjs — do not edit by hand",
+  "counts": {
+    "templates": 32,
+    "categories": 13
+  },
+  "categories": [
+    {
+      "id": "01-minimal",
+      "title": "Minimal",
+      "tagline": "Less is more. Templates that earn attention through restraint.",
+      "showcase": false
+    },
+    {
+      "id": "02-animated",
+      "title": "Animated",
+      "tagline": "One focal motion done well — never a carnival.",
+      "showcase": false
+    },
+    {
+      "id": "03-3d-immersive",
+      "title": "3D & Immersive",
+      "tagline": "Depth, perspective, motion that hints at WebGL — running entirely on `<svg>`.",
+      "showcase": false
+    },
+    {
+      "id": "04-gamified",
+      "title": "Gamified",
+      "tagline": "Arcade-grade. Auto-updated by GitHub Actions.",
+      "showcase": false
+    },
+    {
+      "id": "05-dashboard",
+      "title": "Dashboard",
+      "tagline": "Stats-heavy templates that read like product analytics pages.",
+      "showcase": false
+    },
+    {
+      "id": "06-designer-portfolio",
+      "title": "Designer Portfolio",
+      "tagline": "Visual, brand-driven, opinionated. For people whose work is the way it looks.",
+      "showcase": false
+    },
+    {
+      "id": "07-themed",
+      "title": "Themed",
+      "tagline": "Strong aesthetic identity. Pick one and commit.",
+      "showcase": false
+    },
+    {
+      "id": "08-markdown-tricks",
+      "title": "Markdown Tricks",
+      "tagline": "Techniques that make every other template better. Use them inside whichever you pick.",
+      "showcase": false
+    },
+    {
+      "id": "09-avant-garde",
+      "title": "Avant-Garde",
+      "tagline": "What the GitHub README format is *actually* capable of when you push every SVG primitive at once. No scripts, no GIFs, no external services — just SMIL animation, filter primitives, path morphing, and motion paths, composed with intent.",
+      "showcase": true
+    },
+    {
+      "id": "10-print-analog",
+      "title": "Print & Analog",
+      "tagline": "Halftone screens, misregistration, paper grain, drafting jitter — the vocabulary of things that were printed, rebuilt with SVG filter primitives.",
+      "showcase": false
+    },
+    {
+      "id": "11-swiss-brutalist",
+      "title": "Swiss & Brutalist",
+      "tagline": "Grid, weight, and one accent. The counterweight to everything glowing.",
+      "showcase": false
+    },
+    {
+      "id": "12-generative",
+      "title": "Generative & Data-Art",
+      "tagline": "Your own numbers, drawn by an algorithm rather than a chart library — and the numbers still have to be true.",
+      "showcase": false
+    },
+    {
+      "id": "13-purpose-built",
+      "title": "Purpose-Built",
+      "tagline": "Templates with a job to do. Less about looking good, more about saving somebody a message.",
+      "showcase": false
+    }
+  ],
+  "kinds": {
+    "svg": "ships a self-hosted SVG you download and commit",
+    "markdown": "pure markdown — no images at all",
+    "action": "a GitHub Action generates it in your repo",
+    "technique": "a pattern you apply inside another template"
+  },
+  "templates": [
+    {
+      "slug": "editorial-card",
+      "name": "Editorial Card",
+      "category": "01-minimal",
+      "categoryTitle": "Minimal",
+      "kind": "markdown",
+      "difficulty": "Basic",
+      "blurb": "Magazine-style serif. No deps.",
+      "tags": [
+        "minimal",
+        "serif",
+        "editorial",
+        "no-deps"
+      ],
+      "asset": "assets/minimal/editorial-card.svg",
+      "href": "templates/01-minimal/editorial-card/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "tagline",
+          "where": "markdown",
+          "description": "One-liner under the name (italic)",
+          "example": "Frontend engineer who writes essays in code"
+        },
+        {
+          "token": "currently_line",
+          "where": "markdown",
+          "description": "What you're working on right now",
+          "example": "Building the design system at Acme."
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Site domain shown to the reader",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Site URL with protocol",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter/X handle, no @",
+          "example": "janedoe"
+        },
+        {
+          "token": "linkedin",
+          "where": "markdown",
+          "description": "LinkedIn slug",
+          "example": "janedoe"
+        },
+        {
+          "token": "project_*_name",
+          "where": "markdown",
+          "description": "nth project name",
+          "example": "acme design system"
+        },
+        {
+          "token": "project_*_desc",
+          "where": "markdown",
+          "description": "n-sentence description",
+          "example": "A token-driven UI kit shipped to 14 teams."
+        }
+      ],
+      "credits": [],
+      "sample": "# {{name}}\n\n---\n\n> *{{tagline}}*\n\n— **CURRENTLY**\n{{currently_line}}\n\n— **ELSEWHERE**\n[{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}}) · [in/{{linkedin}}](https://linkedin.com/in/{{linkedin}})\n\n— **WORK**\n1. **{{project_one_name}}** — {{project_one_desc}}\n2. **{{project_two_name}}** — {{project_two_desc}}\n3. **{{project_three_name}}** — {{project_three_desc}}\n\n---\n\n<sub>issue №01 · 2026 · written in this README</sub>",
+      "pitch": "A magazine-style profile that earns attention through restraint, not noise."
+    },
+    {
+      "slug": "monospace-cv",
+      "name": "Monospace CV",
+      "category": "01-minimal",
+      "categoryTitle": "Minimal",
+      "kind": "markdown",
+      "difficulty": "Basic",
+      "blurb": "Profile as a terminal session.",
+      "tags": [
+        "minimal",
+        "monospace",
+        "terminal",
+        "cv"
+      ],
+      "asset": "assets/minimal/monospace-cv.svg",
+      "href": "templates/01-minimal/monospace-cv/",
+      "picture": false,
+      "services": [
+        {
+          "host": "readme-typing-svg.demolab.com",
+          "optional": true
+        }
+      ],
+      "placeholders": [
+        {
+          "token": "username",
+          "where": "markdown",
+          "description": "GitHub-style handle (lowercase + dot OK)",
+          "example": "jane.doe"
+        },
+        {
+          "token": "role",
+          "where": "markdown",
+          "description": "Short role title",
+          "example": "frontend.eng"
+        },
+        {
+          "token": "skills_csv",
+          "where": "markdown",
+          "description": "Comma-separated skills",
+          "example": "typescript · react · node · figma"
+        },
+        {
+          "token": "uptime_line",
+          "where": "markdown",
+          "description": "Years of experience as a sentence",
+          "example": "8 yrs shipping production interfaces."
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain only",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Full URL",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter handle, no @",
+          "example": "janedoe"
+        },
+        {
+          "token": "linkedin",
+          "where": "markdown",
+          "description": "LinkedIn slug",
+          "example": "janedoe"
+        },
+        {
+          "token": "accent",
+          "where": "markdown",
+          "description": "Hex color, no #, used for the typing cursor",
+          "example": "7ee787"
+        },
+        {
+          "token": "typing_line_*",
+          "where": "markdown",
+          "description": "nth rotating status",
+          "example": "currently shipping design tokens"
+        }
+      ],
+      "credits": [
+        {
+          "name": "readme-typing-svg",
+          "author": "DenverCoder1",
+          "url": "https://github.com/DenverCoder1/readme-typing-svg",
+          "license": "MIT"
+        }
+      ],
+      "sample": "```bash\n$ whoami\n{{username}} — {{role}}\n\n$ cat skills.txt\n{{skills_csv}}\n\n$ uptime\n{{uptime_line}}\n\n$ contact --all\n→ {{website}}   @{{twitter}}   in/{{linkedin}}\n```\n\n<a href=\"{{website_url}}\">\n  <img src=\"https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=14&duration=3000&pause=600&color={{accent}}&center=false&vCenter=true&width=435&lines={{typing_line_one}};{{typing_line_two}};{{typing_line_three}}\" alt=\"status\" />\n</a>",
+      "pitch": "Your profile as a terminal session. One font, four prompts, zero noise."
+    },
+    {
+      "slug": "neon-pulse-banner",
+      "name": "Neon Pulse Banner",
+      "category": "02-animated",
+      "categoryTitle": "Animated",
+      "kind": "svg",
+      "difficulty": "Intermediate",
+      "blurb": "Wide gradient hero with a slow wave.",
+      "tags": [
+        "animated",
+        "gradient-flow",
+        "wave-morph",
+        "glow-filter",
+        "self-hosted"
+      ],
+      "asset": "assets/animated/neon-pulse-banner.svg",
+      "href": "templates/02-animated/neon-pulse-banner/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name",
+          "example": "JANE DOE"
+        },
+        {
+          "token": "tagline",
+          "where": "markdown",
+          "description": "Role line",
+          "example": "FRONTEND · MOTION · WEBGL"
+        },
+        {
+          "token": "tags_*",
+          "where": "asset",
+          "description": "Four chip labels",
+          "example": "react, typescript, webgl, motion"
+        },
+        {
+          "token": "bio_paragraph",
+          "where": "markdown",
+          "description": "1–2 sentences in markdown",
+          "example": "I build interfaces that move..."
+        },
+        {
+          "token": "currently_*",
+          "where": "markdown",
+          "description": "Bullet",
+          "example": "shipping the design system at acme"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "URL",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter handle without @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/neon-pulse-banner.svg\" alt=\"{{name}} — {{tagline}}\" width=\"100%\" />\n</p>\n\n### whoami\n\n{{bio_paragraph}}\n\n### currently\n\n- {{currently_one}}\n- {{currently_two}}\n- {{currently_three}}\n\n— [{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}})",
+      "pitch": "Three nested wave paths morphing in parallel against an animated spectrum gradient. Self-hosted SVG — no third-party banner services, no shields, no shimmer-from-someone-else's-Vercel."
+    },
+    {
+      "slug": "typewriter-intro",
+      "name": "Typewriter Intro",
+      "category": "02-animated",
+      "categoryTitle": "Animated",
+      "kind": "svg",
+      "difficulty": "Basic",
+      "blurb": "A terminal that types itself in.",
+      "tags": [
+        "animated",
+        "terminal",
+        "typing",
+        "self-hosted"
+      ],
+      "asset": "assets/animated/typewriter-intro.svg",
+      "href": "templates/02-animated/typewriter-intro/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "prompt_outputs_*",
+          "where": "asset",
+          "description": "prompts' content",
+          "example": "Jane Doe — frontend.engineer..."
+        },
+        {
+          "token": "essay_*_title",
+          "where": "markdown",
+          "description": "Essay link",
+          "example": "On the slowness of good interfaces"
+        },
+        {
+          "token": "essay_*_url",
+          "where": "markdown",
+          "description": "URL",
+          "example": "https://jane.dev/log/slow"
+        },
+        {
+          "token": "project_*_name",
+          "where": "markdown",
+          "description": "Project name, one per row",
+          "example": "acme-ds"
+        },
+        {
+          "token": "project_*_url",
+          "where": "markdown",
+          "description": "Repo or site URL for that project",
+          "example": "https://github.com/jane/acme-ds"
+        },
+        {
+          "token": "project_*_desc",
+          "where": "markdown",
+          "description": "One line on what it is",
+          "example": "token-driven UI kit"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/typewriter-intro.svg\" alt=\"{{name}} — terminal session\" width=\"100%\" />\n</p>\n\n### projects on the desk\n\n- [{{project_one_name}}]({{project_one_url}}) — {{project_one_desc}}\n- [{{project_two_name}}]({{project_two_url}}) — {{project_two_desc}}\n- [{{project_three_name}}]({{project_three_url}}) — {{project_three_desc}}\n\n### writing\n\n[`{{essay_one_title}}`]({{essay_one_url}}) · [`{{essay_two_title}}`]({{essay_two_url}})",
+      "pitch": "A pixel-perfect macOS terminal as your hero. Multiple `$` prompts, syntax-highlighted output, a single blinking cursor. Self-hosted SVG, zero dependencies on third-party typing services."
+    },
+    {
+      "slug": "3d-contribution-tower",
+      "name": "3D Contribution Tower",
+      "category": "03-3d-immersive",
+      "categoryTitle": "3D & Immersive",
+      "kind": "action",
+      "difficulty": "Advanced",
+      "blurb": "Your contributions as an isometric skyline.",
+      "tags": [
+        "3d",
+        "isometric",
+        "contributions",
+        "action"
+      ],
+      "asset": "assets/3d-immersive/3d-contribution-tower.svg",
+      "href": "templates/03-3d-immersive/3d-contribution-tower/",
+      "picture": true,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "username",
+          "where": "setup",
+          "description": "GitHub username (also the profile repo name)",
+          "example": "janedoe"
+        },
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain only",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Full URL",
+          "example": "https://jane.dev"
+        }
+      ],
+      "credits": [
+        {
+          "name": "github-profile-3d-contrib",
+          "author": "yoshi389111",
+          "url": "https://github.com/yoshi389111/github-profile-3d-contrib",
+          "license": "MIT"
+        }
+      ],
+      "sample": "<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"./profile-3d-contrib/profile-night-rainbow.svg\">\n  <source media=\"(prefers-color-scheme: light)\" srcset=\"./profile-3d-contrib/profile-season.svg\">\n  <img alt=\"3d contribution graph\" src=\"./profile-3d-contrib/profile-night-rainbow.svg\" width=\"100%\">\n</picture>\n\n### {{name}} — what these towers mean\n\n- **Tall** weeks = pairing on greenfield work\n- **Flat** stretches = vacations or deep-research weeks\n- **Spiky** weekends = side projects, [{{website}}]({{website_url}})",
+      "pitch": "Your contribution graph as an isometric skyline. Tall bars are productive weeks; flat blocks are vacations."
+    },
+    {
+      "slug": "tech-sphere",
+      "name": "Tech Sphere",
+      "category": "03-3d-immersive",
+      "categoryTitle": "3D & Immersive",
+      "kind": "svg",
+      "difficulty": "Advanced",
+      "blurb": "A rotating orbit of your stack.",
+      "tags": [
+        "3d",
+        "orbit",
+        "stack",
+        "self-hosted"
+      ],
+      "asset": "assets/3d-immersive/tech-sphere.svg",
+      "href": "templates/03-3d-immersive/tech-sphere/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "role",
+          "where": "asset",
+          "description": "Role caps line",
+          "example": "FRONTEND ENGINEER · MOTION · 3D"
+        },
+        {
+          "token": "stack_tokens_*",
+          "where": "asset",
+          "description": "Eight tech labels",
+          "example": "react / ts / webgl / node / rust / go"
+        },
+        {
+          "token": "tier_rows",
+          "where": "asset",
+          "description": "Three stack tiers",
+          "example": "STABLE / TRUSTED / EXPLORING"
+        },
+        {
+          "token": "orbit_explanation_paragraph",
+          "where": "markdown",
+          "description": "1–2 sentences explaining your stack philosophy",
+          "example": "Eight tools, one orbit..."
+        },
+        {
+          "token": "learning_focus",
+          "where": "markdown",
+          "description": "One sentence — what you're learning now",
+          "example": "rust shaders for the type observatory"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "URL",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter handle without @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/tech-sphere.svg\" alt=\"{{name}} — orbital toolbelt\" width=\"100%\" />\n</p>\n\n### why this orbit\n\n{{orbit_explanation_paragraph}}\n\n### what's at the center this week\n\n> {{learning_focus}}\n\n— [{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}})",
+      "pitch": "An actual rotating 3D-look sphere built from intersecting ellipses, with eight tech tokens that orbit on a counter-rotating layer to stay readable. Self-hosted SVG."
+    },
+    {
+      "slug": "snake-eat-graph",
+      "name": "Snake Eat Graph",
+      "category": "04-gamified",
+      "categoryTitle": "Gamified",
+      "kind": "action",
+      "difficulty": "Intermediate",
+      "blurb": "The classic. Eats your contributions daily.",
+      "tags": [
+        "gamified",
+        "snake",
+        "contributions",
+        "action"
+      ],
+      "asset": "assets/gamified/snake-eat-graph.svg",
+      "href": "templates/04-gamified/snake-eat-graph/",
+      "picture": true,
+      "services": [
+        {
+          "host": "raw.githubusercontent.com",
+          "optional": false
+        }
+      ],
+      "placeholders": [
+        {
+          "token": "username",
+          "where": "markdown",
+          "description": "GitHub username (also profile repo name)",
+          "example": "janedoe"
+        },
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "tagline",
+          "where": "markdown",
+          "description": "One-liner",
+          "example": "frontend, daily."
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain only",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Full URL",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter handle without @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [
+        {
+          "name": "snk",
+          "author": "Platane",
+          "url": "https://github.com/Platane/snk",
+          "license": "MIT"
+        },
+        {
+          "name": "ghaction-github-pages",
+          "author": "crazy-max",
+          "url": "https://github.com/crazy-max/ghaction-github-pages",
+          "license": "MIT"
+        }
+      ],
+      "sample": "<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://raw.githubusercontent.com/{{username}}/{{username}}/output/snake-dark.svg\" />\n  <source media=\"(prefers-color-scheme: light)\" srcset=\"https://raw.githubusercontent.com/{{username}}/{{username}}/output/snake.svg\" />\n  <img alt=\"contribution snake\" src=\"https://raw.githubusercontent.com/{{username}}/{{username}}/output/snake.svg\" width=\"100%\" />\n</picture>\n\n### {{name}}\n\n> *{{tagline}}*\n\nThe snake above is built fresh every day — it's eating real commits, not props.\n\n— [{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}})",
+      "pitch": "A snake that slithers across your contribution graph and eats every green square. Generated daily by GitHub Actions."
+    },
+    {
+      "slug": "pacman-graph",
+      "name": "Pac-Man Graph",
+      "category": "04-gamified",
+      "categoryTitle": "Gamified",
+      "kind": "action",
+      "difficulty": "Intermediate",
+      "blurb": "The louder cousin. Ghosts included.",
+      "tags": [
+        "gamified",
+        "pacman",
+        "contributions",
+        "action"
+      ],
+      "asset": "assets/gamified/pacman-graph.svg",
+      "href": "templates/04-gamified/pacman-graph/",
+      "picture": false,
+      "services": [
+        {
+          "host": "raw.githubusercontent.com",
+          "optional": false
+        }
+      ],
+      "placeholders": [
+        {
+          "token": "username",
+          "where": "markdown",
+          "description": "GitHub username (also profile repo name)",
+          "example": "janedoe"
+        },
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "tagline",
+          "where": "markdown",
+          "description": "One-liner",
+          "example": "arcade-grade frontend"
+        },
+        {
+          "token": "commit_count",
+          "where": "markdown",
+          "description": "Optional flair — your commit total this year",
+          "example": "1842"
+        },
+        {
+          "token": "streak_days",
+          "where": "markdown",
+          "description": "Optional — current contribution streak",
+          "example": "47"
+        },
+        {
+          "token": "current_stage",
+          "where": "markdown",
+          "description": "Optional — what you're working on, framed as game",
+          "example": "senior eng @ acme"
+        },
+        {
+          "token": "currently_paragraph",
+          "where": "markdown",
+          "description": "1–2 sentences",
+          "example": "Building..."
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain only",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Full URL",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter handle without @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [
+        {
+          "name": "pacman-contribution-graph",
+          "author": "abozanona",
+          "url": "https://github.com/abozanona/pacman-contribution-graph",
+          "license": "MIT"
+        },
+        {
+          "name": "ghaction-github-pages",
+          "author": "crazy-max",
+          "url": "https://github.com/crazy-max/ghaction-github-pages",
+          "license": "MIT"
+        }
+      ],
+      "sample": "<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/{{username}}/{{username}}/output/pacman-contribution-graph.svg\" alt=\"pacman contribution graph\" width=\"100%\" />\n</p>\n\n<p align=\"center\">\n  <strong>{{name}}</strong> · <em>{{tagline}}</em>\n</p>\n\n<p align=\"center\">\n  <code>HIGH SCORE · {{commit_count}}</code> ·\n  <code>STREAK · {{streak_days}}d</code> ·\n  <code>STAGE · {{current_stage}}</code>\n</p>\n\n---\n\n### currently\n\n{{currently_paragraph}}\n\n[{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}})",
+      "pitch": "Pac-Man eats your contribution dots while ghosts give chase. The snake template's louder cousin."
+    },
+    {
+      "slug": "analytics-grid",
+      "name": "Analytics Grid",
+      "category": "05-dashboard",
+      "categoryTitle": "Dashboard",
+      "kind": "svg",
+      "difficulty": "Intermediate",
+      "blurb": "Metric cards with sparklines. Dashboard energy.",
+      "tags": [
+        "dashboard",
+        "metrics",
+        "cards",
+        "self-hosted"
+      ],
+      "asset": "assets/dashboard/analytics-grid.svg",
+      "href": "templates/05-dashboard/analytics-grid/",
+      "picture": false,
+      "services": [
+        {
+          "host": "github-readme-stats.vercel.app",
+          "optional": true
+        }
+      ],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name (edited inside SVG header)",
+          "example": "JANE DOE"
+        },
+        {
+          "token": "kpi_*",
+          "where": "asset",
+          "description": "Four KPI numbers",
+          "example": "1,842 / 47d / 86 / tue→thu"
+        },
+        {
+          "token": "commit_reason",
+          "where": "markdown",
+          "description": "One sentence narrative",
+          "example": "the design system shipped milestone 3"
+        },
+        {
+          "token": "streak_reason",
+          "where": "markdown",
+          "description": "One sentence narrative",
+          "example": "i blocked 30 minutes every morning"
+        },
+        {
+          "token": "cadence_reason",
+          "where": "markdown",
+          "description": "One sentence narrative",
+          "example": "i protect mondays and fridays for deep work"
+        },
+        {
+          "token": "username",
+          "where": "markdown",
+          "description": "GitHub username (for optional live card)",
+          "example": "janedoe"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "URL",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter without @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [
+        {
+          "name": "github-readme-stats",
+          "author": "anuraghazra",
+          "url": "https://github.com/anuraghazra/github-readme-stats",
+          "license": "MIT"
+        }
+      ],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/analytics-grid.svg\" alt=\"{{name}} — today, in numbers\" width=\"100%\" />\n</p>\n\n### what these say\n\n- **Commits trend up** because {{commit_reason}}\n- **Streak is steady** because {{streak_reason}}\n- **Cadence skews mid-week** because {{cadence_reason}}\n\n### live data\n\n<!-- Optional: drop github-readme-stats card here for actual real-time stats -->\n<p align=\"center\">\n  <img src=\"https://github-readme-stats.vercel.app/api?username={{username}}&hide_title=true&hide_border=true&show_icons=true&theme=dark&bg_color=15192e&text_color=e2e8f0&icon_color=4ade80\" alt=\"live stats\" />\n</p>\n\n— [{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}})",
+      "pitch": "A four-tile executive dashboard with hand-drawn sparklines, a pulse-bar streak meter, weekday cadence dots, and a 90-day trend area chart with a live indicator. Self-hosted hero, optional external stat cards below."
+    },
+    {
+      "slug": "activity-pulse",
+      "name": "Activity Pulse",
+      "category": "05-dashboard",
+      "categoryTitle": "Dashboard",
+      "kind": "action",
+      "difficulty": "Advanced",
+      "blurb": "One card. Lots of signal. metrics-engine.",
+      "tags": [
+        "dashboard",
+        "metrics",
+        "activity",
+        "action"
+      ],
+      "asset": "assets/dashboard/activity-pulse.svg",
+      "href": "templates/05-dashboard/activity-pulse/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "username",
+          "where": "setup",
+          "description": "GitHub username",
+          "example": "janedoe"
+        },
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "tagline",
+          "where": "markdown",
+          "description": "One-liner",
+          "example": "frontend with a metrics habit"
+        },
+        {
+          "token": "side_project_name",
+          "where": "markdown",
+          "description": "Current side project",
+          "example": "the type observatory"
+        },
+        {
+          "token": "side_project_url",
+          "where": "markdown",
+          "description": "Side project URL",
+          "example": "https://github.com/jane/tto"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain only",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Full URL",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter handle without @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [
+        {
+          "name": "metrics",
+          "author": "lowlighter",
+          "url": "https://github.com/lowlighter/metrics",
+          "license": "MIT"
+        }
+      ],
+      "sample": "<h1 align=\"center\">{{name}}</h1>\n<p align=\"center\"><em>{{tagline}}</em></p>\n\n<p align=\"center\">\n  <img src=\"./metrics.activity.svg\" alt=\"activity pulse\" width=\"100%\" />\n</p>\n\n### how I work\n\n- **Peak days are usually Tuesday–Thursday.** I deliberately avoid Mondays for deep work.\n- **Long flat stretches** are research weeks — code shows up later as one big merge.\n- **Spiky weekends** mean a side project is alive. Currently: [{{side_project_name}}]({{side_project_url}}).\n\n— [{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}})",
+      "pitch": "A single-card view of how you actually work. One line, lots of signal."
+    },
+    {
+      "slug": "glassmorphism-hero",
+      "name": "Glassmorphism Hero",
+      "category": "06-designer-portfolio",
+      "categoryTitle": "Designer Portfolio",
+      "kind": "svg",
+      "difficulty": "Advanced",
+      "blurb": "Frosted glass on a melting gradient.",
+      "tags": [
+        "designer",
+        "glassmorphism",
+        "blur",
+        "self-hosted"
+      ],
+      "asset": "assets/designer-portfolio/glassmorphism-hero.svg",
+      "href": "templates/06-designer-portfolio/glassmorphism-hero/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "tagline",
+          "where": "asset",
+          "description": "Italic role line",
+          "example": "Designer-engineer · interface, motion, type"
+        },
+        {
+          "token": "availability",
+          "where": "asset",
+          "description": "Optional availability slot",
+          "example": "2 slots / Q3"
+        },
+        {
+          "token": "approach_paragraph",
+          "where": "markdown",
+          "description": "2–3 sentences positioning",
+          "example": "An independent practice..."
+        },
+        {
+          "token": "essay_one",
+          "where": "markdown",
+          "description": "Recent essay title",
+          "example": "On the slowness of good interfaces"
+        },
+        {
+          "token": "essay_one_url",
+          "where": "markdown",
+          "description": "URL",
+          "example": "https://jane.dev/log/slow"
+        },
+        {
+          "token": "talk_one",
+          "where": "markdown",
+          "description": "Recent talk title",
+          "example": "Motion as Editorial Tool"
+        },
+        {
+          "token": "talk_one_url",
+          "where": "markdown",
+          "description": "URL",
+          "example": "https://..."
+        },
+        {
+          "token": "email",
+          "where": "markdown",
+          "description": "Email",
+          "example": "hello@jane.dev"
+        },
+        {
+          "token": "case_*_name",
+          "where": "markdown",
+          "description": "Case study name",
+          "example": "acme design system"
+        },
+        {
+          "token": "case_*_url",
+          "where": "markdown",
+          "description": "Link to the case study",
+          "example": "https://jane.dev/work/acme"
+        },
+        {
+          "token": "case_*_outcome",
+          "where": "markdown",
+          "description": "The result, in one clause",
+          "example": "shipped to 14 teams"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/glassmorphism-hero.svg\" alt=\"{{name}} — studio portrait\" width=\"100%\" />\n</p>\n\n### approach\n\n{{approach_paragraph}}\n\n### selected case studies\n\n- [{{case_one_name}}]({{case_one_url}}) — {{case_one_outcome}}\n- [{{case_two_name}}]({{case_two_url}}) — {{case_two_outcome}}\n- [{{case_three_name}}]({{case_three_url}}) — {{case_three_outcome}}\n\n### writing & talks\n\n[`{{essay_one}}`]({{essay_one_url}}) · [`{{talk_one}}`]({{talk_one_url}})\n\n— for project enquiries: [{{email}}](mailto:{{email}})",
+      "pitch": "What happens when you take \"glassmorphism\" past 2024 dribbble cliché. Four blurred color orbs animating behind a frosted glass card with iridescent border, crystalline edge highlights, specular dot, and surface grain. Apple Vision Pro DNA."
+    },
+    {
+      "slug": "editorial-magazine",
+      "name": "Editorial Magazine",
+      "category": "06-designer-portfolio",
+      "categoryTitle": "Designer Portfolio",
+      "kind": "markdown",
+      "difficulty": "Intermediate",
+      "blurb": "Typeset like a small print quarterly.",
+      "tags": [
+        "designer",
+        "editorial",
+        "print",
+        "no-deps"
+      ],
+      "asset": "assets/designer-portfolio/editorial-magazine.svg",
+      "href": "templates/06-designer-portfolio/editorial-magazine/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "volume",
+          "where": "markdown",
+          "description": "Issue number",
+          "example": "07"
+        },
+        {
+          "token": "year",
+          "where": "markdown",
+          "description": "Year",
+          "example": "2026"
+        },
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "role",
+          "where": "markdown",
+          "description": "Role title",
+          "example": "independent interface engineer"
+        },
+        {
+          "token": "location",
+          "where": "markdown",
+          "description": "City/country",
+          "example": "Istanbul"
+        },
+        {
+          "token": "press_quote",
+          "where": "markdown",
+          "description": "Single short quote",
+          "example": "quietly excellent"
+        },
+        {
+          "token": "press_outlet",
+          "where": "markdown",
+          "description": "Quote attribution",
+          "example": "sidebar.io"
+        },
+        {
+          "token": "work_*_name",
+          "where": "markdown",
+          "description": "nth project",
+          "example": "acme design system"
+        },
+        {
+          "token": "work_*_url",
+          "where": "markdown",
+          "description": "nth project URL",
+          "example": "https://github.com/jane/acme-ds"
+        },
+        {
+          "token": "essay_*_name",
+          "where": "markdown",
+          "description": "nth essay title",
+          "example": "On the slowness of good interfaces"
+        },
+        {
+          "token": "essay_*_url",
+          "where": "markdown",
+          "description": "nth essay URL",
+          "example": "https://jane.dev/log/slow"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain only",
+          "example": "jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter handle without @",
+          "example": "janedoe"
+        },
+        {
+          "token": "email",
+          "where": "markdown",
+          "description": "Email",
+          "example": "hello@jane.dev"
+        }
+      ],
+      "credits": [],
+      "sample": "<table align=\"center\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\n  <tr>\n    <td bgcolor=\"#111111\" align=\"left\" style=\"padding: 14px 28px;\">\n      <strong style=\"color:#f6f1e7; font-family:Georgia, serif; font-style:italic; letter-spacing:2px;\">THE PROFILE</strong>\n    </td>\n    <td bgcolor=\"#111111\" align=\"right\" style=\"padding: 14px 28px;\">\n      <code style=\"color:#f6f1e7;\">VOL.{{volume}} · {{year}}</code>\n    </td>\n  </tr>\n</table>\n\n<table align=\"center\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"20\">\n  <tr>\n    <td width=\"55%\" valign=\"top\">\n\n# A studio<br><em>of one.</em>\n\n**{{name}}** · {{role}}<br>\nbased in {{location}} · available for select projects\n\n> \"{{press_quote}}\" — *{{press_outlet}}*\n\n    </td>\n    <td width=\"45%\" valign=\"top\">\n\n###### — SELECTED WORK\n\n01 · [{{work_one_name}}]({{work_one_url}})<br>\n02 · [{{work_two_name}}]({{work_two_url}})<br>\n03 · [{{work_three_name}}]({{work_three_url}})\n\n###### — WRITING\n\n[{{essay_one_name}}]({{essay_one_url}})<br>\n[{{essay_two_name}}]({{essay_two_url}})\n\n    </td>\n  </tr>\n</table>\n\n---\n\n<p align=\"center\">\n  <code>{{website}}</code> · <code>@{{twitter}}</code> · <code>{{email}}</code>\n</p>",
+      "pitch": "A profile typeset like the cover of a small print quarterly. Two columns, one display serif, no images."
+    },
+    {
+      "slug": "cyberpunk-neon",
+      "name": "Cyberpunk Neon",
+      "category": "07-themed",
+      "categoryTitle": "Themed",
+      "kind": "svg",
+      "difficulty": "Advanced",
+      "blurb": "Vaporwave grid + chromatic aberration.",
+      "tags": [
+        "themed",
+        "cyberpunk",
+        "vaporwave",
+        "self-hosted"
+      ],
+      "asset": "assets/themed/cyberpunk-neon.svg",
+      "href": "templates/07-themed/cyberpunk-neon/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Title text, ALL_CAPS_WITH_UNDERSCORES",
+          "example": "JANE_DOE"
+        },
+        {
+          "token": "role",
+          "where": "asset",
+          "description": "Subtitle",
+          "example": "FRONTEND.ENGINEER"
+        },
+        {
+          "token": "location_stamp",
+          "where": "asset",
+          "description": "Top-left corner",
+          "example": "TOKYO.SECTOR_07 · 22:14"
+        },
+        {
+          "token": "status_pill",
+          "where": "asset",
+          "description": "Bottom-left phrase",
+          "example": "JACKED IN · NEURAL UPLINK STABLE"
+        },
+        {
+          "token": "tags_list",
+          "where": "asset",
+          "description": "Four uppercase chip labels",
+          "example": "[ react ] [ webgl ] [ rust ] [ shaders ]"
+        },
+        {
+          "token": "bio_lowercase",
+          "where": "markdown",
+          "description": "1–2 sentences in *lowercase only*",
+          "example": "i build interfaces that..."
+        },
+        {
+          "token": "currently_*",
+          "where": "markdown",
+          "description": "lowercase bullets",
+          "example": "shipping the design system..."
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain",
+          "example": "jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Handle without @",
+          "example": "janedoe"
+        },
+        {
+          "token": "email",
+          "where": "markdown",
+          "description": "Email",
+          "example": "hello@jane.dev"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/cyberpunk-neon.svg\" alt=\"{{name}} — cyberpunk profile\" width=\"100%\" />\n</p>\n\n### // whoami\n\n{{bio_lowercase}}\n\n### // currently\n\n- {{currently_one}}\n- {{currently_two}}\n- {{currently_three}}\n\n### // contact\n\n`{{website}}` · `@{{twitter}}` · `{{email}}`",
+      "pitch": "Vaporwave perspective grid receding to a synthwave sun, chromatic-aberration title, animated scan line, and an honest-to-god jacked-in status pill. Self-hosted SVG, capsule-render-free."
+    },
+    {
+      "slug": "dark-elegant",
+      "name": "Dark Elegant",
+      "category": "07-themed",
+      "categoryTitle": "Themed",
+      "kind": "svg",
+      "difficulty": "Intermediate",
+      "blurb": "Monogram, gold hairline, restraint.",
+      "tags": [
+        "themed",
+        "elegant",
+        "monogram",
+        "self-hosted"
+      ],
+      "asset": "assets/themed/dark-elegant.svg",
+      "href": "templates/07-themed/dark-elegant/",
+      "picture": false,
+      "services": [
+        {
+          "host": "github-readme-stats.vercel.app",
+          "optional": true
+        }
+      ],
+      "placeholders": [
+        {
+          "token": "monogram",
+          "where": "asset",
+          "description": "Two-letter italic mark",
+          "example": "JD"
+        },
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Full name in serif caps",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "tagline",
+          "where": "asset",
+          "description": "Tagline between em-dashes",
+          "example": "— DEVELOPER · DESIGNER —"
+        },
+        {
+          "token": "epigraph",
+          "where": "asset",
+          "description": "Italic quote",
+          "example": "\"the slowest type of software...\""
+        },
+        {
+          "token": "location_stamps",
+          "where": "asset",
+          "description": "Top register marks",
+          "example": "EST. MMXVII / ATELIER · ISTANBUL · OSLO"
+        },
+        {
+          "token": "approach_paragraph",
+          "where": "markdown",
+          "description": "2 sentences",
+          "example": "Quiet practice. Long timelines."
+        },
+        {
+          "token": "currently_paragraph",
+          "where": "markdown",
+          "description": "2 sentences",
+          "example": "Shaping the design system at Acme..."
+        },
+        {
+          "token": "project_*_name",
+          "where": "markdown",
+          "description": "Project name",
+          "example": "acme design system"
+        },
+        {
+          "token": "project_*_desc",
+          "where": "markdown",
+          "description": "One-liner",
+          "example": "tokens shipped to 14 teams"
+        },
+        {
+          "token": "username",
+          "where": "markdown",
+          "description": "GitHub username",
+          "example": "janedoe"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain",
+          "example": "jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter without @",
+          "example": "janedoe"
+        },
+        {
+          "token": "email",
+          "where": "markdown",
+          "description": "Email",
+          "example": "hello@jane.dev"
+        }
+      ],
+      "credits": [
+        {
+          "name": "github-readme-stats",
+          "author": "anuraghazra",
+          "url": "https://github.com/anuraghazra/github-readme-stats",
+          "license": "MIT"
+        }
+      ],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/dark-elegant-hero.svg\" alt=\"{{name}} — atelier\" width=\"100%\" />\n</p>\n\n---\n\n### approach\n\n{{approach_paragraph}}\n\n### currently\n\n{{currently_paragraph}}\n\n### selected\n\n> *{{project_one_name}}* — {{project_one_desc}}<br>\n> *{{project_two_name}}* — {{project_two_desc}}\n\n---\n\n<p align=\"center\">\n  <img src=\"https://github-readme-stats.vercel.app/api?username={{username}}&hide_title=true&hide_border=true&show_icons=true&bg_color=00000000&text_color=cccccc&icon_color=d4af37&title_color=d4af37\" alt=\"stats\" />\n</p>\n\n<p align=\"center\">\n  <sub><code>{{website}}</code> · <code>@{{twitter}}</code> · <code>{{email}}</code></sub>\n</p>",
+      "pitch": "A monogrammed onyx portrait with a gold hairline frame, an italic display monogram, and an animated shimmer that sweeps gold across the letterforms once every six seconds. Like a hotel business card. Self-hosted SVG."
+    },
+    {
+      "slug": "light-dark-switcher",
+      "name": "Light / Dark Switcher",
+      "category": "08-markdown-tricks",
+      "categoryTitle": "Markdown Tricks",
+      "kind": "technique",
+      "difficulty": "Basic",
+      "blurb": "One picture tag, perfect theme parity.",
+      "tags": [
+        "trick",
+        "picture",
+        "theme",
+        "light-dark"
+      ],
+      "asset": "assets/markdown-tricks/light-dark-switcher.svg",
+      "href": "templates/08-markdown-tricks/light-dark-switcher/",
+      "picture": true,
+      "services": [
+        {
+          "host": "github-readme-stats.vercel.app",
+          "optional": true
+        },
+        {
+          "host": "raw.githubusercontent.com",
+          "optional": true
+        }
+      ],
+      "placeholders": [
+        {
+          "token": "username",
+          "where": "markdown",
+          "description": "GitHub username",
+          "example": "janedoe"
+        },
+        {
+          "token": "project_name",
+          "where": "markdown",
+          "description": "Project name (for alt text)",
+          "example": "acme design system"
+        }
+      ],
+      "credits": [
+        {
+          "name": "github-readme-stats",
+          "author": "anuraghazra",
+          "url": "https://github.com/anuraghazra/github-readme-stats",
+          "license": "MIT"
+        }
+      ],
+      "sample": "<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://github-readme-stats.vercel.app/api?username={{username}}&show_icons=true&theme=tokyonight&hide_border=true\">\n  <source media=\"(prefers-color-scheme: light)\" srcset=\"https://github-readme-stats.vercel.app/api?username={{username}}&show_icons=true&theme=default&hide_border=true\">\n  <img alt=\"GitHub stats for {{username}}\" src=\"https://github-readme-stats.vercel.app/api?username={{username}}&show_icons=true&hide_border=true\">\n</picture>\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/logo-dark.svg\">\n  <source media=\"(prefers-color-scheme: light)\" srcset=\"./assets/logo-light.svg\">\n  <img alt=\"{{project_name}}\" src=\"./assets/logo-light.svg\" width=\"320\">\n</picture>\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://raw.githubusercontent.com/{{username}}/{{username}}/output/snake-dark.svg\">\n  <source media=\"(prefers-color-scheme: light)\" srcset=\"https://raw.githubusercontent.com/{{username}}/{{username}}/output/snake.svg\">\n  <img alt=\"contribution snake\" src=\"https://raw.githubusercontent.com/{{username}}/{{username}}/output/snake.svg\">\n</picture>",
+      "pitch": "One `<picture>` tag, two source files, perfect theme parity. The single most useful trick on this list."
+    },
+    {
+      "slug": "collapsible-projects",
+      "name": "Collapsible Projects",
+      "category": "08-markdown-tricks",
+      "categoryTitle": "Markdown Tricks",
+      "kind": "markdown",
+      "difficulty": "Basic",
+      "blurb": "Pack ten projects into the space of three.",
+      "tags": [
+        "trick",
+        "details",
+        "projects",
+        "no-deps"
+      ],
+      "asset": "assets/markdown-tricks/collapsible-projects.svg",
+      "href": "templates/08-markdown-tricks/collapsible-projects/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "project_*_name",
+          "where": "markdown",
+          "description": "Project title",
+          "example": "acme design system"
+        },
+        {
+          "token": "project_*_tags",
+          "where": "markdown",
+          "description": "Short tag string",
+          "example": "typescript · react"
+        },
+        {
+          "token": "project_*_description",
+          "where": "markdown",
+          "description": "1–2 sentences",
+          "example": "A token-driven UI kit shipped to 14 teams."
+        },
+        {
+          "token": "project_*_stack",
+          "where": "markdown",
+          "description": "Detailed stack",
+          "example": "TypeScript, React, Vanilla Extract, Storybook"
+        },
+        {
+          "token": "project_*_repo_short",
+          "where": "markdown",
+          "description": "Repo display label",
+          "example": "jane/acme-ds"
+        },
+        {
+          "token": "project_*_repo_url",
+          "where": "markdown",
+          "description": "Repo URL",
+          "example": "https://github.com/jane/acme-ds"
+        },
+        {
+          "token": "archive_*_name",
+          "where": "markdown",
+          "description": "Archive entry title",
+          "example": "the type observatory"
+        },
+        {
+          "token": "archive_*_url",
+          "where": "markdown",
+          "description": "URL",
+          "example": "https://typeobservatory.dev"
+        },
+        {
+          "token": "archive_*_desc",
+          "where": "markdown",
+          "description": "Description",
+          "example": "webgl variable-font experiments, 2023"
+        }
+      ],
+      "credits": [],
+      "sample": "## Projects\n\n<details>\n  <summary><strong>{{project_one_name}}</strong> · <code>{{project_one_tags}}</code></summary>\n\n  {{project_one_description}}\n\n  **Stack:** {{project_one_stack}}\n  **Repo:** [{{project_one_repo_short}}]({{project_one_repo_url}})\n\n</details>\n\n<details>\n  <summary><strong>{{project_two_name}}</strong> · <code>{{project_two_tags}}</code></summary>\n\n  {{project_two_description}}\n\n  **Stack:** {{project_two_stack}}\n  **Repo:** [{{project_two_repo_short}}]({{project_two_repo_url}})\n\n</details>\n\n<details>\n  <summary><strong>{{project_three_name}}</strong> · <code>{{project_three_tags}}</code></summary>\n\n  {{project_three_description}}\n\n  **Stack:** {{project_three_stack}}\n  **Repo:** [{{project_three_repo_short}}]({{project_three_repo_url}})\n\n</details>\n\n<details>\n  <summary><strong>archived</strong> · <em>older work</em></summary>\n\n  - [{{archive_one_name}}]({{archive_one_url}}) — {{archive_one_desc}}\n  - [{{archive_two_name}}]({{archive_two_url}}) — {{archive_two_desc}}\n  - [{{archive_three_name}}]({{archive_three_url}}) — {{archive_three_desc}}\n\n</details>",
+      "pitch": "Pack ten projects into the space of three with `<details>`. The visitor opens what they care about."
+    },
+    {
+      "slug": "aurora-veil",
+      "name": "Aurora Veil",
+      "category": "09-avant-garde",
+      "categoryTitle": "Avant-Garde",
+      "kind": "svg",
+      "difficulty": "Advanced",
+      "blurb": "Multi-layer turbulence + displacement, never repeats.",
+      "tags": [
+        "avant-garde",
+        "turbulence",
+        "displacement",
+        "self-hosted"
+      ],
+      "asset": "assets/avant-garde/aurora-veil.svg",
+      "href": "templates/09-avant-garde/aurora-veil/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Name (edited inside the SVG <text>)",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "tagline",
+          "where": "markdown",
+          "description": "Role line",
+          "example": "DESIGNER · ENGINEER · OBSERVER"
+        },
+        {
+          "token": "currently_paragraph",
+          "where": "markdown",
+          "description": "1–2 sentences",
+          "example": "Building a quiet design system at Acme..."
+        },
+        {
+          "token": "writing_paragraph",
+          "where": "markdown",
+          "description": "1–2 sentences",
+          "example": "Notes on motion and color at jane.dev/log."
+        },
+        {
+          "token": "epigraph",
+          "where": "markdown",
+          "description": "Short literary line",
+          "example": "we are made of light, deadlines, and Pacific time"
+        },
+        {
+          "token": "epigraph_attribution",
+          "where": "markdown",
+          "description": "Source",
+          "example": "the journal, vol. iii"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "URL",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter handle without @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/aurora-veil.svg\" alt=\"{{name}} — {{tagline}}\" width=\"100%\" />\n</p>\n\n<table align=\"center\" width=\"80%\" border=\"0\">\n  <tr>\n    <td valign=\"top\" align=\"left\">\n\n### currently\n{{currently_paragraph}}\n\n### writing\n{{writing_paragraph}}\n\n    </td>\n    <td valign=\"top\" align=\"right\" width=\"36%\">\n      <em>\"{{epigraph}}\"</em><br>\n      <sub>— {{epigraph_attribution}}</sub><br><br>\n      <a href=\"{{website_url}}\">{{website}}</a><br>\n      <a href=\"https://twitter.com/{{twitter}}\">@{{twitter}}</a>\n    </td>\n  </tr>\n</table>",
+      "pitch": "A living aurora that never repeats. Multi-layer `<feTurbulence>` + `<feDisplacementMap>` with animated seeds — the SVG renders fresh frames forever, on a static image tag."
+    },
+    {
+      "slug": "holographic-foil",
+      "name": "Holographic Foil",
+      "category": "09-avant-garde",
+      "categoryTitle": "Avant-Garde",
+      "kind": "svg",
+      "difficulty": "Advanced",
+      "blurb": "Trading-card foil, animated stop-color iridescence.",
+      "tags": [
+        "avant-garde",
+        "iridescent",
+        "card",
+        "self-hosted"
+      ],
+      "asset": "assets/avant-garde/holographic-foil.svg",
+      "href": "templates/09-avant-garde/holographic-foil/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name",
+          "example": "JANE DOE"
+        },
+        {
+          "token": "role",
+          "where": "markdown",
+          "description": "Role",
+          "example": "FRONTEND ENGINEER"
+        },
+        {
+          "token": "level",
+          "where": "markdown",
+          "description": "Years of experience as a \"level\"",
+          "example": "7"
+        },
+        {
+          "token": "hp",
+          "where": "asset",
+          "description": "A number that means something (commits, days streak)",
+          "example": "2,184"
+        },
+        {
+          "token": "monogram",
+          "where": "asset",
+          "description": "Two-letter italic monogram",
+          "example": "JD"
+        },
+        {
+          "token": "bio_paragraph",
+          "where": "markdown",
+          "description": "1–2 sentences",
+          "example": "Trades rare type systems..."
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "URL",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter handle without @",
+          "example": "janedoe"
+        },
+        {
+          "token": "linkedin",
+          "where": "markdown",
+          "description": "LinkedIn slug",
+          "example": "janedoe"
+        },
+        {
+          "token": "currently_*_label",
+          "where": "markdown",
+          "description": "Short label for a “currently” row",
+          "example": "shipping"
+        },
+        {
+          "token": "currently_*_text",
+          "where": "markdown",
+          "description": "What you are doing, one line",
+          "example": "the design system at Acme"
+        },
+        {
+          "token": "ability_*_*",
+          "where": "asset",
+          "description": "Ability label, score, sublabel",
+          "example": "⚡ Type System Mastery / 86 / strict.tsconfig…"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/holographic-foil.svg\" alt=\"{{name}} — {{role}} (lv.{{level}})\" width=\"100%\" />\n</p>\n\n### dossier\n\n{{bio_paragraph}}\n\n### encounters\n\n- **{{currently_one_label}}** · {{currently_one_text}}\n- **{{currently_two_label}}** · {{currently_two_text}}\n- **{{currently_three_label}}** · {{currently_three_text}}\n\n### find\n\n[{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}}) · [in/{{linkedin}}](https://linkedin.com/in/{{linkedin}})",
+      "pitch": "Your profile as a 1st-edition holographic trading card. Animated stop-color iridescence + skewed sheen sweep + orbiting highlight + crystal-scale pattern. The kind of thing people screenshot."
+    },
+    {
+      "slug": "liquid-morph-wordmark",
+      "name": "Liquid Morph Wordmark",
+      "category": "09-avant-garde",
+      "categoryTitle": "Avant-Garde",
+      "kind": "svg",
+      "difficulty": "Advanced",
+      "blurb": "Path interpolation across six geometric forms.",
+      "tags": [
+        "avant-garde",
+        "path-morph",
+        "wordmark",
+        "self-hosted"
+      ],
+      "asset": "assets/avant-garde/liquid-morph-wordmark.svg",
+      "href": "templates/09-avant-garde/liquid-morph-wordmark/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name_short",
+          "where": "markdown",
+          "description": "Wordmark text",
+          "example": "JANE"
+        },
+        {
+          "token": "tagline",
+          "where": "markdown",
+          "description": "One-liner for accessibility alt",
+          "example": "studio of one"
+        },
+        {
+          "token": "what_paragraph",
+          "where": "markdown",
+          "description": "1–2 sentences positioning",
+          "example": "An independent practice..."
+        },
+        {
+          "token": "now_paragraph",
+          "where": "markdown",
+          "description": "1–2 sentences current work",
+          "example": "Designing the system at..."
+        },
+        {
+          "token": "writing_paragraph",
+          "where": "markdown",
+          "description": "1–2 sentences writing/output",
+          "example": "Notes on motion..."
+        },
+        {
+          "token": "work_*_name",
+          "where": "markdown",
+          "description": "nth selected work",
+          "example": "acme design system"
+        },
+        {
+          "token": "work_*_url",
+          "where": "markdown",
+          "description": "URL",
+          "example": "https://github.com/..."
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "URL",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter without @",
+          "example": "janedoe"
+        },
+        {
+          "token": "email",
+          "where": "markdown",
+          "description": "Email",
+          "example": "hello@jane.dev"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/liquid-morph-wordmark.svg\" alt=\"{{name_short}} — {{tagline}}\" width=\"100%\" />\n</p>\n\n---\n\n<table border=\"0\" align=\"center\" width=\"80%\">\n  <tr>\n    <td valign=\"top\" width=\"60%\">\n\n### what\n\n{{what_paragraph}}\n\n### now\n\n{{now_paragraph}}\n\n### writing\n\n{{writing_paragraph}}\n\n    </td>\n    <td valign=\"top\" width=\"40%\" align=\"right\">\n      <p><strong>SELECTED</strong><br>\n      <code>01</code> &nbsp; <a href=\"{{work_one_url}}\">{{work_one_name}}</a><br>\n      <code>02</code> &nbsp; <a href=\"{{work_two_url}}\">{{work_two_name}}</a><br>\n      <code>03</code> &nbsp; <a href=\"{{work_three_url}}\">{{work_three_name}}</a></p>\n\n      <p><strong>FIND</strong><br>\n      <a href=\"{{website_url}}\">{{website}}</a><br>\n      <a href=\"https://twitter.com/{{twitter}}\">@{{twitter}}</a><br>\n      <a href=\"mailto:{{email}}\">{{email}}</a></p>\n    </td>\n  </tr>\n</table>",
+      "pitch": "A brutalist Swiss wordmark with a single morphing glyph that interpolates through six geometric states forever. Path interpolation done right — every transition is one continuous curve, no keyframe pop."
+    },
+    {
+      "slug": "neural-pulse-lattice",
+      "name": "Neural Pulse Lattice",
+      "category": "09-avant-garde",
+      "categoryTitle": "Avant-Garde",
+      "kind": "svg",
+      "difficulty": "Advanced",
+      "blurb": "10 nodes, 15 edges, 9 signals — animateMotion + mpath.",
+      "tags": [
+        "avant-garde",
+        "animatemotion",
+        "network",
+        "self-hosted"
+      ],
+      "asset": "assets/avant-garde/neural-pulse-lattice.svg",
+      "href": "templates/09-avant-garde/neural-pulse-lattice/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "role",
+          "where": "asset",
+          "description": "Role line in caps",
+          "example": "FRONTEND · INTERFACE · MOTION"
+        },
+        {
+          "token": "stats_*",
+          "where": "asset",
+          "description": "The 5 stat rows",
+          "example": "nodes / 10"
+        },
+        {
+          "token": "transmission_paragraph",
+          "where": "markdown",
+          "description": "1–2 sentence bio",
+          "example": "I build the kind of..."
+        },
+        {
+          "token": "node_*_label",
+          "where": "markdown",
+          "description": "Active project label",
+          "example": "acme/design-system"
+        },
+        {
+          "token": "node_*_text",
+          "where": "markdown",
+          "description": "Active project description",
+          "example": "tokens shipped to 14 product teams"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "URL",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter without @",
+          "example": "janedoe"
+        },
+        {
+          "token": "email",
+          "where": "markdown",
+          "description": "Email",
+          "example": "hello@jane.dev"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/neural-pulse-lattice.svg\" alt=\"{{name}} — neural pulse lattice\" width=\"100%\" />\n</p>\n\n### transmission\n\n{{transmission_paragraph}}\n\n### nodes (currently active)\n\n- `n01` · {{node_one_label}} — {{node_one_text}}\n- `n02` · {{node_two_label}} — {{node_two_text}}\n- `n03` · {{node_three_label}} — {{node_three_text}}\n\n### endpoints\n\n[`{{website}}`]({{website_url}}) · [`@{{twitter}}`](https://twitter.com/{{twitter}}) · [`{{email}}`](mailto:{{email}})\n",
+      "pitch": "A 10-node graph with 9 signals racing along its edges in real time. `<animateMotion>` + `<mpath>` + parallax node halos. Reads like a particle-physics readout. Says \"I work on hard things.\""
+    },
+    {
+      "slug": "risograph-poster",
+      "name": "Risograph Poster",
+      "category": "10-print-analog",
+      "categoryTitle": "Print & Analog",
+      "kind": "svg",
+      "difficulty": "Advanced",
+      "blurb": "Two-ink riso print, halftone screens and all.",
+      "tags": [
+        "print",
+        "risograph",
+        "halftone",
+        "misregistration",
+        "self-hosted"
+      ],
+      "asset": "assets/print-analog/risograph-poster.svg",
+      "href": "templates/10-print-analog/risograph-poster/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name — also set in both headline layers",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "tagline",
+          "where": "markdown",
+          "description": "Role line — also set in the SVG",
+          "example": "Frontend engineer"
+        },
+        {
+          "token": "body_line_*",
+          "where": "asset",
+          "description": "Two lines of poster body copy",
+          "example": "Building the parts nobody notices."
+        },
+        {
+          "token": "edition_note",
+          "where": "asset",
+          "description": "The footer edition line",
+          "example": "EDITION OF 100"
+        },
+        {
+          "token": "currently_paragraph",
+          "where": "markdown",
+          "description": "One or two sentences on what you are doing now",
+          "example": "Shaping the design system at Acme."
+        },
+        {
+          "token": "project_*_name",
+          "where": "markdown",
+          "description": "Project name, one per bullet",
+          "example": "acme design system"
+        },
+        {
+          "token": "project_*_desc",
+          "where": "markdown",
+          "description": "One line on what it is",
+          "example": "tokens shipped to 14 teams"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain shown to the reader",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Site URL with protocol",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter/X handle, no @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/risograph-poster.svg\" alt=\"{{name}} — {{tagline}}\" width=\"100%\" />\n</p>\n\n### now\n\n{{currently_paragraph}}\n\n### selected work\n\n- **{{project_one_name}}** — {{project_one_desc}}\n- **{{project_two_name}}** — {{project_two_desc}}\n- **{{project_three_name}}** — {{project_three_desc}}\n\n— [{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}})",
+      "pitch": "Two spot inks, screened sixty degrees apart and deliberately out of register — a poster that looks like it came off a drum duplicator, built entirely from `<pattern>` and `feTurbulence`."
+    },
+    {
+      "slug": "blueprint-schematic",
+      "name": "Blueprint Schematic",
+      "category": "10-print-analog",
+      "categoryTitle": "Print & Analog",
+      "kind": "svg",
+      "difficulty": "Advanced",
+      "blurb": "Your README, drafted as an exploded assembly.",
+      "tags": [
+        "print",
+        "blueprint",
+        "technical-drawing",
+        "displacement",
+        "self-hosted"
+      ],
+      "asset": "assets/print-analog/blueprint-schematic.svg",
+      "href": "templates/10-print-analog/blueprint-schematic/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name — also set in the title block",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "callout_*",
+          "where": "asset",
+          "description": "The four numbered callout labels",
+          "example": "HERO — self-hosted SVG"
+        },
+        {
+          "token": "drawn_by",
+          "where": "asset",
+          "description": "Title-block author field",
+          "example": "janedoe"
+        },
+        {
+          "token": "revision",
+          "where": "asset",
+          "description": "Title-block revision letter",
+          "example": "C"
+        },
+        {
+          "token": "section_one_note",
+          "where": "markdown",
+          "description": "A line about your hero section",
+          "example": "One self-hosted SVG, no services."
+        },
+        {
+          "token": "section_two_note",
+          "where": "markdown",
+          "description": "A line about what you are doing now",
+          "example": "Shaping the design system at Acme."
+        },
+        {
+          "token": "project_*_name",
+          "where": "markdown",
+          "description": "Project name, one per bullet",
+          "example": "acme design system"
+        },
+        {
+          "token": "project_*_desc",
+          "where": "markdown",
+          "description": "One line on what it is",
+          "example": "tokens shipped to 14 teams"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain shown to the reader",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Site URL with protocol",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter/X handle, no @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/blueprint-schematic.svg\" alt=\"{{name}} — profile assembly\" width=\"100%\" />\n</p>\n\n### 01 — hero\n\n{{section_one_note}}\n\n### 02 — currently\n\n{{section_two_note}}\n\n### 03 — work\n\n- **{{project_one_name}}** — {{project_one_desc}}\n- **{{project_two_name}}** — {{project_two_desc}}\n\n### 04 — contact\n\n[{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}})",
+      "pitch": "Your profile drawn as an exploded technical elevation on cyanotype stock — leadered, numbered, dimensioned, with a title block. The linework wobbles very slightly, because a drafting hand does."
+    },
+    {
+      "slug": "boarding-pass",
+      "name": "Boarding Pass",
+      "category": "10-print-analog",
+      "categoryTitle": "Print & Analog",
+      "kind": "svg",
+      "difficulty": "Intermediate",
+      "blurb": "Where you are, where you are going, and a stub.",
+      "tags": [
+        "print",
+        "ticket",
+        "boarding-pass",
+        "open-to-work",
+        "self-hosted"
+      ],
+      "asset": "assets/print-analog/boarding-pass.svg",
+      "href": "templates/10-print-analog/boarding-pass/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name — also set as the passenger",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "origin_code",
+          "where": "asset",
+          "description": "Three-letter origin",
+          "example": "IST"
+        },
+        {
+          "token": "destination_code",
+          "where": "asset",
+          "description": "Three-letter destination",
+          "example": "PRD"
+        },
+        {
+          "token": "field_*",
+          "where": "asset",
+          "description": "The five foot fields: flight, gate, seat, boards, status",
+          "example": "GATE 47"
+        },
+        {
+          "token": "itinerary_paragraph",
+          "where": "markdown",
+          "description": "Where you are headed, in a sentence or two",
+          "example": "Design systems, then motion."
+        },
+        {
+          "token": "project_*_name",
+          "where": "markdown",
+          "description": "Project name, one per bullet",
+          "example": "acme design system"
+        },
+        {
+          "token": "project_*_desc",
+          "where": "markdown",
+          "description": "One line on what it is",
+          "example": "tokens shipped to 14 teams"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain shown to the reader",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Site URL with protocol",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter/X handle, no @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/boarding-pass.svg\" alt=\"{{name}} — boarding pass\" width=\"100%\" />\n</p>\n\n### itinerary\n\n{{itinerary_paragraph}}\n\n### carry-on\n\n- **{{project_one_name}}** — {{project_one_desc}}\n- **{{project_two_name}}** — {{project_two_desc}}\n- **{{project_three_name}}** — {{project_three_desc}}\n\n— [{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}})",
+      "pitch": "Your profile as an airline boarding pass — origin, destination, gate, seat, and a torn-off stub with a barcode. A status field that says `OPEN TO WORK` without a banner."
+    },
+    {
+      "slug": "vinyl-sleeve",
+      "name": "Vinyl Sleeve",
+      "category": "10-print-analog",
+      "categoryTitle": "Print & Analog",
+      "kind": "svg",
+      "difficulty": "Intermediate",
+      "blurb": "A record half out of its sleeve. Projects are the tracklist.",
+      "tags": [
+        "print",
+        "vinyl",
+        "record",
+        "tracklist",
+        "self-hosted"
+      ],
+      "asset": "assets/print-analog/vinyl-sleeve.svg",
+      "href": "templates/10-print-analog/vinyl-sleeve/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name — also set on the sleeve",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "monogram",
+          "where": "asset",
+          "description": "Two letters on the record label",
+          "example": "JD"
+        },
+        {
+          "token": "tracklist_*",
+          "where": "asset",
+          "description": "The five tracklist rows",
+          "example": "A1 · acme design system · 4:12"
+        },
+        {
+          "token": "liner_notes",
+          "where": "markdown",
+          "description": "A paragraph about the record, so to speak",
+          "example": "Five years of interface work, in order."
+        },
+        {
+          "token": "track_*_name",
+          "where": "markdown",
+          "description": "Project name, one per bullet",
+          "example": "acme design system"
+        },
+        {
+          "token": "track_*_desc",
+          "where": "markdown",
+          "description": "One line on what it is",
+          "example": "tokens shipped to 14 teams"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain shown to the reader",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Site URL with protocol",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter/X handle, no @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/vinyl-sleeve.svg\" alt=\"{{name}} — selected works\" width=\"100%\" />\n</p>\n\n### liner notes\n\n{{liner_notes}}\n\n### side a\n\n- **{{track_one_name}}** — {{track_one_desc}}\n- **{{track_two_name}}** — {{track_two_desc}}\n- **{{track_three_name}}** — {{track_three_desc}}\n\n— [{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}})",
+      "pitch": "A twelve-inch sleeve with the record drawn behind it, so the disc reads as half pulled out. Your projects are the tracklist, with run times."
+    },
+    {
+      "slug": "swiss-grid",
+      "name": "Swiss Grid",
+      "category": "11-swiss-brutalist",
+      "categoryTitle": "Swiss & Brutalist",
+      "kind": "svg",
+      "difficulty": "Intermediate",
+      "blurb": "Twelve columns, left visible, and one red.",
+      "tags": [
+        "swiss",
+        "grid",
+        "typography",
+        "editorial",
+        "self-hosted"
+      ],
+      "asset": "assets/swiss-brutalist/swiss-grid.svg",
+      "href": "templates/11-swiss-brutalist/swiss-grid/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name — split across two elements in the SVG",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "tagline",
+          "where": "markdown",
+          "description": "Role line in the running head",
+          "example": "Frontend engineer"
+        },
+        {
+          "token": "statement_*",
+          "where": "asset",
+          "description": "The three ragged-right statement lines",
+          "example": "Interfaces that hold up"
+        },
+        {
+          "token": "index_*",
+          "where": "asset",
+          "description": "The four numbered index entries",
+          "example": "Design systems"
+        },
+        {
+          "token": "statement_heading",
+          "where": "markdown",
+          "description": "Heading above your statement paragraph",
+          "example": "what I do"
+        },
+        {
+          "token": "statement_paragraph",
+          "where": "markdown",
+          "description": "A paragraph in your own words",
+          "example": "I build design systems that survive adoption."
+        },
+        {
+          "token": "project_*_name",
+          "where": "markdown",
+          "description": "Project name, one per bullet",
+          "example": "acme design system"
+        },
+        {
+          "token": "project_*_desc",
+          "where": "markdown",
+          "description": "One line on what it is",
+          "example": "tokens shipped to 14 teams"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain shown to the reader",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Site URL with protocol",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter/X handle, no @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/swiss-grid.svg\" alt=\"{{name}} — {{tagline}}\" width=\"100%\" />\n</p>\n\n### {{statement_heading}}\n\n{{statement_paragraph}}\n\n### index\n\n- **{{project_one_name}}** — {{project_one_desc}}\n- **{{project_two_name}}** — {{project_two_desc}}\n- **{{project_three_name}}** — {{project_three_desc}}\n\n— [{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}})",
+      "pitch": "A twelve-column grid that is drawn rather than hidden. Everything sits on a column edge or a baseline, and the single red is the only thing allowed to break the black."
+    },
+    {
+      "slug": "brutalist-slab",
+      "name": "Brutalist Slab",
+      "category": "11-swiss-brutalist",
+      "categoryTitle": "Swiss & Brutalist",
+      "kind": "svg",
+      "difficulty": "Basic",
+      "blurb": "Heavy borders, deliberate overlap, one warning yellow.",
+      "tags": [
+        "brutalist",
+        "slab",
+        "high-contrast",
+        "no-radius",
+        "self-hosted"
+      ],
+      "asset": "assets/swiss-brutalist/brutalist-slab.svg",
+      "href": "templates/11-swiss-brutalist/brutalist-slab/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name, set on the black slab",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "tagline",
+          "where": "markdown",
+          "description": "Role line under the name",
+          "example": "Frontend engineer"
+        },
+        {
+          "token": "slab_line_*",
+          "where": "asset",
+          "description": "The three lines on the yellow slab",
+          "example": "NO FRAMEWORKS WERE"
+        },
+        {
+          "token": "cell_*",
+          "where": "asset",
+          "description": "The four index cells: label, value, note",
+          "example": "STREAK · 47 DAYS"
+        },
+        {
+          "token": "statement_heading",
+          "where": "markdown",
+          "description": "Heading for your statement",
+          "example": "WHAT I DO"
+        },
+        {
+          "token": "statement_paragraph",
+          "where": "markdown",
+          "description": "A paragraph, ideally blunt",
+          "example": "I make interfaces that do not need a tour."
+        },
+        {
+          "token": "project_*_name",
+          "where": "markdown",
+          "description": "Project name, one per bullet",
+          "example": "acme design system"
+        },
+        {
+          "token": "project_*_desc",
+          "where": "markdown",
+          "description": "One line on what it is",
+          "example": "tokens shipped to 14 teams"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain shown to the reader",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Site URL with protocol",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter/X handle, no @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/brutalist-slab.svg\" alt=\"{{name}} — {{tagline}}\" width=\"100%\" />\n</p>\n\n## {{statement_heading}}\n\n{{statement_paragraph}}\n\n## WORK\n\n- **{{project_one_name}}** — {{project_one_desc}}\n- **{{project_two_name}}** — {{project_two_desc}}\n- **{{project_three_name}}** — {{project_three_desc}}\n\n**{{website}}** · [@{{twitter}}](https://twitter.com/{{twitter}}) · [{{website_url}}]({{website_url}})",
+      "pitch": "Every element is a box with a six-pixel border. Boxes overlap instead of aligning, nothing is rounded, and the structure is the only decoration."
+    },
+    {
+      "slug": "type-specimen",
+      "name": "Type Specimen",
+      "category": "11-swiss-brutalist",
+      "categoryTitle": "Swiss & Brutalist",
+      "kind": "svg",
+      "difficulty": "Basic",
+      "blurb": "Your name as a foundry specimen, ruled and measured.",
+      "tags": [
+        "typography",
+        "specimen",
+        "serif",
+        "editorial",
+        "self-hosted"
+      ],
+      "asset": "assets/swiss-brutalist/type-specimen.svg",
+      "href": "templates/11-swiss-brutalist/type-specimen/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name — appears at all five settings in the SVG",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "ladder_*",
+          "where": "asset",
+          "description": "The four smaller settings, each adding detail",
+          "example": "Jane Doe — frontend engineer"
+        },
+        {
+          "token": "glyph_row",
+          "where": "asset",
+          "description": "The alphabet and figures row",
+          "example": "ABCDEFGHIJKLM… 0123456789"
+        },
+        {
+          "token": "colophon_heading",
+          "where": "markdown",
+          "description": "Heading for your note",
+          "example": "colophon"
+        },
+        {
+          "token": "colophon_paragraph",
+          "where": "markdown",
+          "description": "A paragraph about how you work",
+          "example": "Set in whatever the reader has installed."
+        },
+        {
+          "token": "project_*_name",
+          "where": "markdown",
+          "description": "Project name, one per bullet",
+          "example": "acme design system"
+        },
+        {
+          "token": "project_*_desc",
+          "where": "markdown",
+          "description": "One line on what it is",
+          "example": "tokens shipped to 14 teams"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain shown to the reader",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Site URL with protocol",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter/X handle, no @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/type-specimen.svg\" alt=\"{{name}} — specimen\" width=\"100%\" />\n</p>\n\n### {{colophon_heading}}\n\n{{colophon_paragraph}}\n\n### set in\n\n- **{{project_one_name}}** — {{project_one_desc}}\n- **{{project_two_name}}** — {{project_two_desc}}\n\n— [{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}})",
+      "pitch": "Your name set the way a type foundry sets a specimen sheet: one word at five sizes, with cap-height, x-height and baseline ruled and labelled, and a glyph row underneath."
+    },
+    {
+      "slug": "flow-field",
+      "name": "Flow Field",
+      "category": "12-generative",
+      "categoryTitle": "Generative & Data-Art",
+      "kind": "svg",
+      "difficulty": "Advanced",
+      "blurb": "A year of commits, drawn as a vector field.",
+      "tags": [
+        "generative",
+        "flow-field",
+        "streamlines",
+        "data-art",
+        "self-hosted"
+      ],
+      "asset": "assets/generative/flow-field.svg",
+      "href": "templates/12-generative/flow-field/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name — also set in the SVG",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "caption",
+          "where": "asset",
+          "description": "The mono caption under your name",
+          "example": "A YEAR, AS A VECTOR FIELD"
+        },
+        {
+          "token": "year_paragraph",
+          "where": "markdown",
+          "description": "What the year actually involved",
+          "example": "Mostly one design system, and a lot of typography."
+        },
+        {
+          "token": "project_*_name",
+          "where": "markdown",
+          "description": "Project name, one per bullet",
+          "example": "acme design system"
+        },
+        {
+          "token": "project_*_desc",
+          "where": "markdown",
+          "description": "One line on what it is",
+          "example": "tokens shipped to 14 teams"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain shown to the reader",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Site URL with protocol",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter/X handle, no @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/flow-field.svg\" alt=\"{{name}} — a year as a vector field\" width=\"100%\" />\n</p>\n\n### the year\n\n{{year_paragraph}}\n\n### what came out of it\n\n- **{{project_one_name}}** — {{project_one_desc}}\n- **{{project_two_name}}** — {{project_two_desc}}\n- **{{project_three_name}}** — {{project_three_desc}}\n\n— [{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}})",
+      "pitch": "Five hundred streamlines tracing one continuous vector field. Neighbours stay parallel because they follow the same field; only the density changes, and it changes with how much you committed."
+    },
+    {
+      "slug": "voronoi-territory",
+      "name": "Voronoi Territory",
+      "category": "12-generative",
+      "categoryTitle": "Generative & Data-Art",
+      "kind": "svg",
+      "difficulty": "Advanced",
+      "blurb": "Your languages as territory, sized by how much you write them.",
+      "tags": [
+        "generative",
+        "voronoi",
+        "power-diagram",
+        "data-art",
+        "self-hosted"
+      ],
+      "asset": "assets/generative/voronoi-territory.svg",
+      "href": "templates/12-generative/voronoi-territory/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name — also set in the SVG",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "language_*",
+          "where": "asset",
+          "description": "The nine language names and shares",
+          "example": "TypeScript · 31.0%"
+        },
+        {
+          "token": "territory_paragraph",
+          "where": "markdown",
+          "description": "What the split says about your work",
+          "example": "One language, and eight it talks to."
+        },
+        {
+          "token": "project_*_name",
+          "where": "markdown",
+          "description": "Project name, one per bullet",
+          "example": "acme design system"
+        },
+        {
+          "token": "project_*_desc",
+          "where": "markdown",
+          "description": "One line on what it is",
+          "example": "tokens shipped to 14 teams"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain shown to the reader",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Site URL with protocol",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter/X handle, no @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/voronoi-territory.svg\" alt=\"{{name}} — languages by area\" width=\"100%\" />\n</p>\n\n### territory\n\n{{territory_paragraph}}\n\n### built with it\n\n- **{{project_one_name}}** — {{project_one_desc}}\n- **{{project_two_name}}** — {{project_two_desc}}\n\n— [{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}})",
+      "pitch": "A power diagram whose weights were solved until every cell's area equals its language's share — so the map and the legend cannot disagree."
+    },
+    {
+      "slug": "strata-core",
+      "name": "Strata Core",
+      "category": "12-generative",
+      "categoryTitle": "Generative & Data-Art",
+      "kind": "svg",
+      "difficulty": "Intermediate",
+      "blurb": "Six years of commits as a drilled core sample.",
+      "tags": [
+        "generative",
+        "geology",
+        "timeline",
+        "data-art",
+        "self-hosted"
+      ],
+      "asset": "assets/generative/strata-core.svg",
+      "href": "templates/12-generative/strata-core/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name — also set in the SVG",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "year_*",
+          "where": "asset",
+          "description": "The six year labels and their commit counts",
+          "example": "2026 · 1,842 commits"
+        },
+        {
+          "token": "log_paragraph",
+          "where": "markdown",
+          "description": "What the years actually contained",
+          "example": "Two quiet years, then a design system."
+        },
+        {
+          "token": "project_*_name",
+          "where": "markdown",
+          "description": "Project name, one per bullet",
+          "example": "acme design system"
+        },
+        {
+          "token": "project_*_desc",
+          "where": "markdown",
+          "description": "One line on what it is",
+          "example": "tokens shipped to 14 teams"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain shown to the reader",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Site URL with protocol",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter/X handle, no @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/strata-core.svg\" alt=\"{{name}} — six years, by thickness\" width=\"100%\" />\n</p>\n\n### the log\n\n{{log_paragraph}}\n\n### deepest layers\n\n- **{{project_one_name}}** — {{project_one_desc}}\n- **{{project_two_name}}** — {{project_two_desc}}\n\n— [{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}})",
+      "pitch": "Each year is a bed whose thickness is its share of all your commits, with wavy contacts between them and a depth scale down the side. A timeline that reads as rock."
+    },
+    {
+      "slug": "open-to-work",
+      "name": "Open to Work",
+      "category": "13-purpose-built",
+      "categoryTitle": "Purpose-Built",
+      "kind": "svg",
+      "difficulty": "Basic",
+      "blurb": "Available, what you want, what you don't, and how to reach you.",
+      "tags": [
+        "hiring",
+        "availability",
+        "open-to-work",
+        "utility",
+        "self-hosted"
+      ],
+      "asset": "assets/purpose-built/open-to-work.svg",
+      "href": "templates/13-purpose-built/open-to-work/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name — also set on the card",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "role_line",
+          "where": "asset",
+          "description": "Role and specialisms under your name",
+          "example": "Senior frontend engineer"
+        },
+        {
+          "token": "looking_for_*",
+          "where": "asset",
+          "description": "The three things you want",
+          "example": "Product teams that own a surface"
+        },
+        {
+          "token": "not_looking_for_*",
+          "where": "asset",
+          "description": "The three things you do not",
+          "example": "Relocation, or on-site five days"
+        },
+        {
+          "token": "fact_*",
+          "where": "asset",
+          "description": "Availability, timezone, type, notice",
+          "example": "UTC+3"
+        },
+        {
+          "token": "recent_paragraph",
+          "where": "markdown",
+          "description": "What you have been working on",
+          "example": "Two years on one design system."
+        },
+        {
+          "token": "email",
+          "where": "markdown",
+          "description": "Contact address",
+          "example": "hello@jane.dev"
+        },
+        {
+          "token": "project_*_name",
+          "where": "markdown",
+          "description": "Project name, one per bullet",
+          "example": "acme design system"
+        },
+        {
+          "token": "project_*_desc",
+          "where": "markdown",
+          "description": "One line on what it is",
+          "example": "tokens shipped to 14 teams"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain shown to the reader",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Site URL with protocol",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter/X handle, no @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/open-to-work.svg\" alt=\"{{name}} — open to work\" width=\"100%\" />\n</p>\n\n### what I've been doing\n\n{{recent_paragraph}}\n\n### where you can see it\n\n- **{{project_one_name}}** — {{project_one_desc}}\n- **{{project_two_name}}** — {{project_two_desc}}\n- **{{project_three_name}}** — {{project_three_desc}}\n\n**Reach me:** [{{email}}](mailto:{{email}}) · [{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}})",
+      "pitch": "Everything a hiring manager checks in the first ten seconds, in the order they check it — including the column almost nobody writes down: what you are *not* looking for."
+    },
+    {
+      "slug": "oss-maintainer",
+      "name": "OSS Maintainer",
+      "category": "13-purpose-built",
+      "categoryTitle": "Purpose-Built",
+      "kind": "svg",
+      "difficulty": "Basic",
+      "blurb": "What you maintain, how fast you answer, where to start.",
+      "tags": [
+        "open-source",
+        "maintainer",
+        "expectations",
+        "utility",
+        "self-hosted"
+      ],
+      "asset": "assets/purpose-built/oss-maintainer.svg",
+      "href": "templates/13-purpose-built/oss-maintainer/",
+      "picture": false,
+      "services": [],
+      "placeholders": [
+        {
+          "token": "name",
+          "where": "markdown",
+          "description": "Display name — also set on the card",
+          "example": "Jane Doe"
+        },
+        {
+          "token": "repo_*",
+          "where": "asset",
+          "description": "The three project rows and their figures",
+          "example": "acme-design-system · 1,243"
+        },
+        {
+          "token": "commitment_*",
+          "where": "asset",
+          "description": "First response, triage day, review, security",
+          "example": "within 72h"
+        },
+        {
+          "token": "contributing_paragraph",
+          "where": "markdown",
+          "description": "How you want people to approach the projects",
+          "example": "Open an issue before a large PR."
+        },
+        {
+          "token": "good_first_url",
+          "where": "markdown",
+          "description": "Link to your good-first-issue filter",
+          "example": "https://github.com/jane/acme/labels/good%20first%20issue"
+        },
+        {
+          "token": "contributing_url",
+          "where": "markdown",
+          "description": "Link to your contributing guide",
+          "example": "https://github.com/jane/acme/blob/main/CONTRIBUTING.md"
+        },
+        {
+          "token": "project_*_name",
+          "where": "markdown",
+          "description": "Project name, one per bullet",
+          "example": "acme design system"
+        },
+        {
+          "token": "project_*_desc",
+          "where": "markdown",
+          "description": "One line on what it is",
+          "example": "tokens shipped to 14 teams"
+        },
+        {
+          "token": "website",
+          "where": "markdown",
+          "description": "Domain shown to the reader",
+          "example": "jane.dev"
+        },
+        {
+          "token": "website_url",
+          "where": "markdown",
+          "description": "Site URL with protocol",
+          "example": "https://jane.dev"
+        },
+        {
+          "token": "twitter",
+          "where": "markdown",
+          "description": "Twitter/X handle, no @",
+          "example": "janedoe"
+        }
+      ],
+      "credits": [],
+      "sample": "<p align=\"center\">\n  <img src=\"./assets/oss-maintainer.svg\" alt=\"{{name}} — maintainer\" width=\"100%\" />\n</p>\n\n### how to contribute\n\n{{contributing_paragraph}}\n\nStart with a [good first issue]({{good_first_url}}). Read [CONTRIBUTING.md]({{contributing_url}}) first — it is short.\n\n### what I maintain\n\n- **{{project_one_name}}** — {{project_one_desc}}\n- **{{project_two_name}}** — {{project_two_desc}}\n- **{{project_three_name}}** — {{project_three_desc}}\n\n— [{{website}}]({{website_url}}) · [@{{twitter}}](https://twitter.com/{{twitter}})",
+      "pitch": "A maintainer card that sets expectations before anyone opens an issue: response times, triage day, security policy, and a count of good first issues."
+    }
+  ]
+}
