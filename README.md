@@ -5,7 +5,7 @@
 <h1 align="center">Awesome GitHub Profile</h1>
 
 <p align="center">
-  <strong>Design-led GitHub profile README templates.</strong><br>
+  <strong>Design-led GitHub profile README .</strong><br>
   From minimal type studies to 3D contribution skylines — copy, paste, ship.
 </p>
 
